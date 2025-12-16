@@ -3,27 +3,59 @@ import { motion } from "framer-motion";
 import { FaGithub, FaExternalLinkAlt } from "react-icons/fa";
 
 const projects = [
-  {
-    title: "Task Manager App",
-    description: "Full-stack MERN task management system with auth, CRUD, and JWT.",
+    {
+    title: "AI Task Manager",
+    description: "An AI-powered task management application with smart organization, productivity features, and AI-assisted task prioritization.",
     img: "/task.jpg",
-    github: "https://github.com/yetty8/Task-Manager1",
-    live: "https://statuesque-fairy-411f1a.netlify.app/"
+    github: "https://github.com/yetty8/AI-TASK-MANAGER",
+    live: "https://ai-task-manager-2.vercel.app/"
+  },
+
+  {
+    title: "IT Help-Desk",
+    description: "IT Help-Desk is a web application that allows users to submit tickets for support and track their status.",
+    img: "/IT-helpdesk.jpg",
+    github: "https://github.com/yetty8/IT-Help-Desk",
+    live: "https://it-help-desk-mauve.vercel.app/"
+  },
+
+  {
+    title: "Weather App",
+    description: "A weather application built with Django, featuring real-time data, responsive UI, and location-based forecasts.",
+    img: "/weather.jpg",
+    github: "https://github.com/yetty8/Django-Weather-App-1/tree/main/weather",
+    live: "https://web-production-fd1a3.up.railway.app/"
+  },
+  
+  {
+    title: "Hotel Website",
+    description: "A modern hotel booking UI with animations, responsive design, and seamless user experience.",
+    img: "/Hotel.jpg",
+    github: "https://github.com/yetty8/Hotel",
+    live: "https://kaleidoscopic-brigadeiros-25d88d.netlify.app/"
+  },
+    {
+    title: "E-Commerce Store",
+    description: "An online store built with React, Redux, and Stripe integration for payments.",
+    img: "/website.jpg",
+    github: "https://github.com/yetty8/ecommerce-store/actions/runs/19597540592",
+    live: "https://69221707b5b5cd5aff129eb4--unique-nasturtium-f0022f.netlify.app/"
+  },
+   {
+    title: "Nature Notes",
+    description: "Angular app that cycles nature videos with one-click scene switching.",
+    img: "/nature1.jpg",
+    github: "https://github.com/yetty8/Angular",
+    live: "https://angular-production-7992.up.railway.app/"
   },
   {
     title: "Travel Blog",
     description: "React + Tailwind blog site with dynamic categories and routing.",
     img: "/travel.jpg",
-    github: "https://github.com/yetty8/MyBlog/tree/main/backend",
-    live: "https://691cb92455d90605bd6ba323--grand-begonia-6a7b20.netlify.app/"
+    github: "https://github.com/yetty8/MyBlog",
+    live: "https://691cb92455d90605bd6ba323--yetbarek-blog.netlify.app/"
   },
-  {
-    title: "E-Commerce Store",
-    description: "An online store built with React, Redux, and Stripe integration for payments.",
-    img: "/website.jpg",
-    github: "https://github.com/yetty8/ecommerce-store",
-    live: "https://69173a9795002645ce8f2c31--dynamic-longma-922b52.netlify.app/"
-  },
+ 
 ];
 
 export default function Projects() {

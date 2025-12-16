@@ -1,6 +1,6 @@
 import React, { useState, useEffect } from "react";
 import { motion } from "framer-motion";
-import { FaLinkedin, FaGithub, FaFacebook, FaInstagram, FaTwitter } from "react-icons/fa";
+import { FaLinkedin, FaGithub } from "react-icons/fa";
 
 export default function Hero() {
   const words = ["Full-Stack Web Developer", "React & Node.js Enthusiast", "Problem Solver"];
@@ -61,47 +61,35 @@ export default function Hero() {
           <span className="border-r-2 border-gray-700 dark:border-gray-300 ml-1 animate-pulse"></span>
         </p>
 
+        {/* Social Icons */}
         <div className="flex gap-5 text-3xl text-gray-700 dark:text-gray-300">
-          <a
+          {/* LinkedIn */}
+          <motion.a
             href="https://www.linkedin.com/in/yetbarek-temesgen-b195526a/"
             target="_blank"
             rel="noopener noreferrer"
-            className="p-3 rounded-full bg-gray-200 dark:bg-gray-700 hover:bg-blue-600 dark:hover:bg-blue-400 text-gray-700 dark:text-gray-100 transition transform hover:scale-110"
+            whileHover={{ rotate: 360 }}
+            transition={{ duration: 0.6 }}
+            className="p-3 rounded-full bg-gray-200 dark:bg-gray-700 hover:bg-blue-600 
+                       dark:hover:bg-blue-400 text-gray-700 dark:text-gray-100 
+                       transition transform hover:scale-110"
           >
             <FaLinkedin />
-          </a>
-          <a
+          </motion.a>
+
+          {/* GitHub */}
+          <motion.a
             href="https://github.com/yetty8"
             target="_blank"
             rel="noopener noreferrer"
-            className="p-3 rounded-full bg-gray-200 dark:bg-gray-700 hover:bg-black dark:hover:bg-gray-100 text-gray-700 dark:text-gray-100 transition transform hover:scale-110"
+            whileHover={{ rotate: 360 }}
+            transition={{ duration: 0.6 }}
+            className="p-3 rounded-full bg-gray-200 dark:bg-gray-700 hover:bg-black 
+                       dark:hover:bg-gray-100 text-gray-700 dark:text-gray-100 
+                       transition transform hover:scale-110"
           >
             <FaGithub />
-          </a>
-          <a
-            href="https://twitter.com/YOUR_USERNAME"
-            target="_blank"
-            rel="noopener noreferrer"
-            className="p-3 rounded-full bg-gray-200 dark:bg-gray-700 hover:bg-blue-400 dark:hover:bg-blue-300 text-gray-700 dark:text-gray-100 transition transform hover:scale-110"
-          >
-            <FaTwitter />
-          </a>
-          <a
-            href="https://www.facebook.com/YOUR_USERNAME"
-            target="_blank"
-            rel="noopener noreferrer"
-            className="p-3 rounded-full bg-gray-200 dark:bg-gray-700 hover:bg-blue-600 dark:hover:bg-blue-400 text-gray-700 dark:text-gray-100 transition transform hover:scale-110"
-          >
-            <FaFacebook />
-          </a>
-          <a
-            href="https://www.instagram.com/YOUR_USERNAME"
-            target="_blank"
-            rel="noopener noreferrer"
-            className="p-3 rounded-full bg-gray-200 dark:bg-gray-700 hover:bg-pink-600 dark:hover:bg-pink-500 text-gray-700 dark:text-gray-100 transition transform hover:scale-110"
-          >
-            <FaInstagram />
-          </a>
+          </motion.a>
         </div>
       </motion.div>
 
@@ -115,7 +103,8 @@ export default function Hero() {
         <img
           src="/prince.png"
           alt="Yetbarek Temesgen"
-          className="w-64 h-64 md:w-72 md:h-72 object-cover rounded-full shadow-2xl border-4 border-gray-200 dark:border-gray-700"
+          className="w-64 h-64 md:w-72 md:h-72 object-cover rounded-full shadow-2xl 
+                     border-4 border-gray-200 dark:border-gray-700"
         />
       </motion.div>
     </section>
