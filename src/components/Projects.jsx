@@ -53,7 +53,7 @@ const projects = [
     description: "React + Tailwind blog site with dynamic categories and routing.",
     img: "/travel.jpg",
     github: "https://github.com/yetty8/MyBlog",
-    live: "https://691cb92455d90605bd6ba323--yetbarek-blog.netlify.app/"
+    live: "https://my-blog-ochre-rho.vercel.app/"
   },
  
 ];
