@@ -18,6 +18,13 @@ const projects = [
     github: "https://github.com/yetty8/IT-Help-Desk",
     live: "https://it-help-desk-mauve.vercel.app/"
   },
+   {
+    title: "E-Commerce Store",
+    description: "An online store built with React, Redux, and Stripe integration for payments.",
+    img: "/website.jpg",
+    github: "https://github.com/yetty8/ecommerce-store/actions/runs/19597540592",
+    live: "https://ecommerce-store-orpin-chi.vercel.app/"
+  },
 
   {
     title: "Weather App",
@@ -34,13 +41,7 @@ const projects = [
     github: "https://github.com/yetty8/Hotel",
     live: "https://hotel-one-nu.vercel.app/"
   },
-    {
-    title: "E-Commerce Store",
-    description: "An online store built with React, Redux, and Stripe integration for payments.",
-    img: "/website.jpg",
-    github: "https://github.com/yetty8/ecommerce-store/actions/runs/19597540592",
-    live: "https://69221707b5b5cd5aff129eb4--unique-nasturtium-f0022f.netlify.app/"
-  },
+   
    {
     title: "Nature Notes",
     description: "Angular app that cycles nature videos with one-click scene switching.",
