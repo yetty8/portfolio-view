@@ -32,7 +32,7 @@ const projects = [
     description: "A modern hotel booking UI with animations, responsive design, and seamless user experience.",
     img: "/Hotel.jpg",
     github: "https://github.com/yetty8/Hotel",
-    live: "https://kaleidoscopic-brigadeiros-25d88d.netlify.app/"
+    live: "https://hotel-one-nu.vercel.app/"
   },
     {
     title: "E-Commerce Store",
