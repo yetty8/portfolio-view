@@ -33,6 +33,13 @@ const projects = [
     github: "https://github.com/yetty8/Django-Weather-App-1/tree/main/weather",
     live: "https://web-production-fd1a3.up.railway.app/"
   },
+   {
+    title: "Travel Blog",
+    description: "React + Tailwind blog site with dynamic categories and routing.",
+    img: "/travel.jpg",
+    github: "https://github.com/yetty8/MyBlog",
+    live: "https://my-blog-ochre-rho.vercel.app/"
+  },
   
   {
     title: "Hotel Website",
@@ -48,13 +55,6 @@ const projects = [
     img: "/nature1.jpg",
     github: "https://github.com/yetty8/Angular",
     live: "https://angular-production-7992.up.railway.app/"
-  },
-  {
-    title: "Travel Blog",
-    description: "React + Tailwind blog site with dynamic categories and routing.",
-    img: "/travel.jpg",
-    github: "https://github.com/yetty8/MyBlog",
-    live: "https://my-blog-ochre-rho.vercel.app/"
   },
  
 ];
