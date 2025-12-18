@@ -1,21 +1,53 @@
 import React from "react";
 import { motion } from "framer-motion";
-import { FaReact, FaNodeJs, FaDatabase, FaCode, FaCss3Alt, FaHtml5 } from "react-icons/fa";
-import { SiMongodb, SiJavascript, SiTailwindcss, SiGithub, SiExpress } from "react-icons/si";
+import { 
+  FaReact, 
+  FaNodeJs, 
+  FaDatabase, 
+  FaCode, 
+  FaCss3Alt, 
+  FaHtml5, 
+  FaGitAlt, 
+  FaDocker,
+  FaAws 
+} from "react-icons/fa";
+import { 
+  SiMongodb, 
+  SiJavascript, 
+  SiTailwindcss, 
+  SiGithub, 
+  SiExpress, 
+  SiTypescript, 
+  SiNextdotjs, 
+  SiPostgresql, 
+  SiFirebase, 
+  SiGraphql, 
+  SiRedux, 
+  SiJest 
+} from "react-icons/si";
 
 export default function Skills() {
   const skills = [
     { name: "JavaScript", icon: <SiJavascript /> },
+    { name: "TypeScript", icon: <SiTypescript /> },
     { name: "React.js", icon: <FaReact /> },
+    { name: "Next.js", icon: <SiNextdotjs /> },
     { name: "Node.js", icon: <FaNodeJs /> },
     { name: "Express.js", icon: <SiExpress /> },
     { name: "MongoDB", icon: <SiMongodb /> },
-    { name: "SQL", icon: <FaDatabase /> },
+    { name: "PostgreSQL", icon: <SiPostgresql /> },
+    { name: "Firebase", icon: <SiFirebase /> },
     { name: "HTML5", icon: <FaHtml5 /> },
     { name: "CSS3", icon: <FaCss3Alt /> },
     { name: "TailwindCSS", icon: <SiTailwindcss /> },
     { name: "GitHub", icon: <SiGithub /> },
+    { name: "Git", icon: <FaGitAlt /> },
+    { name: "Docker", icon: <FaDocker /> },
     { name: "REST APIs", icon: <FaCode /> },
+    { name: "GraphQL", icon: <SiGraphql /> },
+    { name: "Redux", icon: <SiRedux /> },
+    { name: "Jest", icon: <SiJest /> },
+    { name: "AWS", icon: <FaAws /> }
   ];
 
   return (

@@ -2,9 +2,35 @@
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
+    <link rel="manifest" href="/manifest.json" />
     <link rel="icon" type="image/svg+xml" href="/vite.svg" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>portfolio-view</title>
+    <title>Yetbarek Temesgen - Portfolio</title>
+    <script>
+      // Service Worker Registration (Production Only)
+      if ('serviceWorker' in navigator && process.env.NODE_ENV === 'production') {
+        window.addEventListener('load', () => {
+          navigator.serviceWorker.register('/sw.js')
+            .then(registration => {
+              console.log('ServiceWorker registration successful');
+            })
+            .catch(error => {
+              console.log('ServiceWorker registration failed: ', error);
+            });
+        });
+      }
+
+      // Performance monitoring
+      if ('performance' in window) {
+        window.addEventListener('load', () => {
+          const timing = window.performance.timing;
+          if (timing) {
+            const loadTime = timing.loadEventEnd - timing.navigationStart;
+            console.log(`Page loaded in ${loadTime}ms`);
+          }
+        });
+      }
+    </script>
   </head>
   <body>
     <div id="root"></div>
