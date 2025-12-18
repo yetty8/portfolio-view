@@ -27,13 +27,13 @@ export default function Footer({ darkMode, setDarkMode }) {
             >
               <FaLinkedin size={24} />
             </a>
-            <a 
-              href="https://mail.google.com/mail/u/1/#inbox"
-              className="hover:text-blue-500 transition-colors duration-300"
-              aria-label="Email"
-            >
-              <FaEnvelope size={24} />
-            </a>
+           <a 
+             href="mailto:yetbarek.tech@gmail.com"
+             className="hover:text-blue-500 transition-colors duration-300"
+             aria-label="Email"
+           >
+             <FaEnvelope size={24} />
+           </a>
           </div>
           
           <div className="text-sm mb-4 md:mb-0">
