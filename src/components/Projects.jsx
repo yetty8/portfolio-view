@@ -56,6 +56,13 @@ const projects = [
     github: "https://github.com/yetty8/Angular",
     live: "https://angular-production-7992.up.railway.app/"
   },
+  {
+    title: "World Map Quiz",
+    description: "Interactive quiz game testing knowledge of world capitals and countries.",
+    img: "/world.jpg",
+    github: "https://github.com/yetty8/world-map-quiz-game-HTML-CSS-JS-",
+    live: "https://world-map-quiz-game.vercel.app/"
+  }
  
 ];
 
