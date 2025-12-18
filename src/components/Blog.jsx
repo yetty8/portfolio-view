@@ -5,49 +5,100 @@ import Image from './Image';
 const blogPosts = [
   {
     id: 1,
-    title: "Getting Started with React Hooks",
-    excerpt: "Learn how to use React Hooks to simplify your components...",
-    date: "May 15, 2023",
-    readTime: "5 min read",
-    category: "React",
+    title: "How I Built an IT Help Desk Ticketing System Using React and Node.js",
+    excerpt:
+      "Building an IT Help Desk system helped me understand how real-world support workflows function and how full-stack applications are structured.",
+    content: `
+When I started building my IT Help Desk Ticketing System, my goal was to simulate how real companies handle technical support requests. I wanted users to be able to submit tickets, track their status, and allow admins to manage and resolve issues efficiently.
+
+I built the frontend using React, focusing on clean UI components and usability. Users can submit tickets with categories like hardware, software, or network issues. On the backend, I used Node.js and Express to handle API requests and MongoDB to store ticket data.
+
+One of the main challenges was managing ticket states such as open, in progress, and resolved. Implementing this logic helped me understand how backend validation and frontend state management work together.
+
+This project gave me hands-on experience with REST APIs, CRUD operations, and real-world problem solving. It also strengthened my understanding of how IT support teams operate in real environments.
+    `,
+    date: "October 2, 2023",
+    readTime: "6 min read",
+    category: "Full Stack / IT Support",
     image: "/images/blog/1.jpg"
   },
   {
     id: 2,
-    title: "CSS Grid vs Flexbox: When to Use Which",
-    excerpt: "A comprehensive guide to choosing the right CSS layout method...",
-    date: "June 10, 2023",
-    readTime: "7 min read",
-    category: "CSS",
+    title: "Deploying a Full-Stack MERN Application to Railway: Lessons Learned",
+    excerpt:
+      "Deployment is often the hardest part of a project. Here’s what I learned deploying my MERN application to Railway.",
+    content: `
+After completing my MERN application, deployment was the next big challenge. I chose Railway because of its simplicity and strong support for Node.js and MongoDB.
+
+One issue I faced was a MongoDB connection error caused by environment variables not loading correctly. Fixing this taught me the importance of .env files and production configurations.
+
+I also learned how Railway manages containers, start commands, and build logs. Debugging deployment errors forced me to read logs carefully instead of guessing.
+
+Successfully deploying my app gave me confidence that I can move projects from development to production — a crucial skill for any developer.
+    `,
+    date: "October 10, 2023",
+    readTime: "5 min read",
+    category: "Deployment / DevOps",
     image: "/images/blog/2.jpg"
   },
   {
     id: 3,
-    title: "Building Accessible Web Applications",
-    excerpt: "Best practices for creating web applications that everyone can use...",
-    date: "July 5, 2023",
-    readTime: "6 min read",
-    category: "Accessibility",
+    title: "React State Management Explained: What I Learned from Real Projects",
+    excerpt:
+      "Understanding state management became much easier once I applied it to real React projects.",
+    content: `
+When I first learned React, state management felt confusing. Hooks like useState and useEffect made more sense once I started building real applications.
+
+In smaller components, useState was enough. But as my apps grew, I realized the importance of lifting state up and passing props properly.
+
+Through trial and error, I learned how poor state structure can lead to unnecessary re-renders and bugs. Refactoring my components helped me write cleaner and more maintainable code.
+
+This experience improved both my technical skills and my ability to plan component architecture before writing code.
+    `,
+    date: "October 18, 2023",
+    readTime: "7 min read",
+    category: "React",
     image: "/images/blog/3.jpg"
   },
+
+ {
+  id: 4,
+  title: "Optimizing React Performance: What I Fixed in Real Projects",
+  excerpt:
+    "Performance issues became more noticeable as my React projects grew. Here’s how I improved speed and reduced unnecessary re-renders.",
+  content: `
+As my React applications became more complex, I started noticing performance issues such as unnecessary re-renders and slow component updates. This pushed me to learn how React handles rendering under the hood.
+
+One of the first improvements I made was identifying components that were re-rendering too often. By using React DevTools, I was able to track component updates and understand where optimizations were needed.
+
+I applied techniques such as memoization using React.memo and useCallback to prevent unnecessary renders. I also learned how to properly structure component state so that updates affected only the components that truly needed to change.
+
+Optimizing performance taught me to think more critically about component design and data flow. These improvements resulted in faster load times and smoother user interactions, especially in larger applications.
+  `,
+  date: "August 12, 2023",
+  readTime: "8 min read",
+  category: "React",
+  image: "/images/blog/4.jpg"
+},
   {
-    id: 4,
-    title: "Optimizing React Performance",
-    excerpt: "Techniques to make your React applications faster and more efficient...",
-    date: "August 12, 2023",
-    readTime: "8 min read",
-    category: "React",
-    image: "/images/blog/4.jpg"
-  },
-  {
-    id: 5,
-    title: "State Management in Modern React",
-    excerpt: "Comparing different state management solutions for React applications...",
-    date: "September 8, 2023",
-    readTime: "10 min read",
-    category: "React",
-    image: "/images/blog/light.jpg"
-  }
+  id: 5,
+  title: "State Management in Modern React: What I Use and Why",
+  excerpt:
+    "Choosing the right state management approach depends on the size and needs of the application. Here’s what I learned from building real React projects.",
+  content: `
+As I built more React applications, I realized that state management plays a critical role in maintainability and scalability. Early on, I relied heavily on useState and prop drilling, which worked well for small projects.
+
+However, as my applications grew, passing state through multiple component levels became harder to manage. This led me to explore better patterns such as lifting state up and organizing components more effectively.
+
+I learned that not every project needs a complex state management library. In many cases, React’s built-in hooks were enough when used correctly. For larger applications, separating concerns and planning state structure ahead of time made a significant difference.
+
+Understanding when to keep state local and when to share it globally helped me write cleaner, more predictable code and made my applications easier to debug and extend.
+  `,
+  date: "September 8, 2023",
+  readTime: "10 min read",
+  category: "React",
+  image: "/images/blog/light.jpg"
+}
 ];
 
 export default function Blog() {
