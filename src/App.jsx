@@ -1,4 +1,5 @@
 import { lazy, Suspense, useState, useEffect } from 'react';
+import { SpeedInsights } from '@vercel/speed-insights/react';
 
 const Navbar = lazy(() => import('./components/Navbar'));
 const Hero = lazy(() => import('./components/Hero'));
@@ -37,6 +38,7 @@ export default function App() {
       
       <Blog />
       <Footer darkMode={darkMode} setDarkMode={setDarkMode} />
+      <SpeedInsights />
     </Suspense>
   );
 }
