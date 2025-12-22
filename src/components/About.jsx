@@ -36,14 +36,15 @@ export default function About() {
             </h3>
 
             <p className="text-gray-700 dark:text-gray-300 mb-4 leading-relaxed">
-              I'm a passionate Full-Stack Developer who enjoys building modern,
-              scalable, and user-friendly web applications. I love working with
-              React, Node.js, MongoDB, and creating clean UI/UX experiences.
+              I'm a Full-Stack Developer passionate about building modern, scalable, and user-friendly web applications. I create software that solves real problems, whether it’s dynamic interfaces, backend systems, or workflow automation.
+            </p>
+
+            <p className="text-gray-700 dark:text-gray-300 mb-4 leading-relaxed">
+              I actively contribute to open-source projects and enjoy collaborating with communities to improve tools and processes. Sharing knowledge and building together drives me as a developer.
             </p>
 
             <p className="text-gray-700 dark:text-gray-300 leading-relaxed">
-              I enjoy learning, problem-solving, and turning ideas into real products.
-              My goal is to build impactful software that solves real problems.
+              I thrive on learning, problem-solving, and turning ideas into impactful products. I’m especially excited about projects that combine technology and real-world impact.
             </p>
           </motion.div>
 
@@ -61,22 +62,25 @@ export default function About() {
             <ul className="space-y-4 text-gray-700 dark:text-gray-300">
               <li className="flex items-center gap-3">
                 <FaReact className="text-blue-500 dark:text-blue-400 text-xl" /> 
-                Build responsive full-stack apps (MERN)
+                Build responsive, user-friendly frontends with React & Tailwind
               </li>
               <li className="flex items-center gap-3">
                 <FaNodeJs className="text-green-600 dark:text-green-400 text-xl" /> 
-                Create fast UI using React + Tailwind
-              </li>
-              <li className="flex items-center gap-3">
-                <FaCode className="text-purple-600 dark:text-purple-400 text-xl" /> 
-                Develop REST APIs with Node.js
+                Develop scalable backend APIs with Node.js & Express
               </li>
               <li className="flex items-center gap-3">
                 <FaDatabase className="text-yellow-600 dark:text-yellow-400 text-xl" /> 
-                Database designs with MongoDB & SQL
+                Design efficient MongoDB & SQL databases for complex applications
               </li>
               <li className="flex items-center gap-3">
-                🚀 Deploy apps to Netlify, Vercel, Render
+                <FaCode className="text-purple-600 dark:text-purple-400 text-xl" /> 
+                Integrate third-party APIs & automate workflows
+              </li>
+              <li className="flex items-center gap-3">
+                🚀 Deploy full-stack apps seamlessly to Vercel, Netlify, and Render
+              </li>
+              <li className="flex items-center gap-3">
+                🌱 Contribute to open-source projects and build tools for the community
               </li>
             </ul>
           </motion.div>

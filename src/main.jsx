@@ -1,6 +1,6 @@
 import React from 'react';
 import ReactDOM from 'react-dom/client';
-import './index.css';  // Add this line
+import './index.css';  // This is your main CSS file
 import App from './App';
 import reportWebVitals from './utils/reportWebVitals';
 
@@ -10,5 +10,3 @@ root.render(
     <App />
   </React.StrictMode>
 );
-
-reportWebVitals(console.log);
